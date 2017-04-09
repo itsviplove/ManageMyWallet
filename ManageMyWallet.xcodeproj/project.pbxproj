@@ -13,6 +13,8 @@
 		37F2A03B1E99EEA400630786 /* ManageMyWallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37F2A0391E99EEA400630786 /* ManageMyWallet.xcdatamodeld */; };
 		37F2A03D1E99EEA400630786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F2A03C1E99EEA400630786 /* Assets.xcassets */; };
 		37F2A0401E99EEA400630786 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37F2A03E1E99EEA400630786 /* LaunchScreen.storyboard */; };
+		37F2A0481E99EF6F00630786 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37F2A0471E99EF6F00630786 /* GoogleService-Info.plist */; };
+		F5883F60F0CA36C414EFDBB7 /* Pods_ManageMyWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C1B9E4CCB88BB28587E185 /* Pods_ManageMyWallet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		37F2A03C1E99EEA400630786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37F2A03F1E99EEA400630786 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37F2A0411E99EEA400630786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37F2A0471E99EF6F00630786 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		686891E7E2E7F6B3CC32C273 /* Pods-ManageMyWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManageMyWallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-ManageMyWallet/Pods-ManageMyWallet.release.xcconfig"; sourceTree = "<group>"; };
+		E4D422437A339F59AB48E22D /* Pods-ManageMyWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ManageMyWallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ManageMyWallet/Pods-ManageMyWallet.debug.xcconfig"; sourceTree = "<group>"; };
+		F8C1B9E4CCB88BB28587E185 /* Pods_ManageMyWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ManageMyWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5883F60F0CA36C414EFDBB7 /* Pods_ManageMyWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22C111FE64E7214A966F8E78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4D422437A339F59AB48E22D /* Pods-ManageMyWallet.debug.xcconfig */,
+				686891E7E2E7F6B3CC32C273 /* Pods-ManageMyWallet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		37F2A0261E99EEA400630786 = {
 			isa = PBXGroup;
 			children = (
 				37F2A0311E99EEA400630786 /* ManageMyWallet */,
 				37F2A0301E99EEA400630786 /* Products */,
+				22C111FE64E7214A966F8E78 /* Pods */,
+				614417D3296360ABED148EF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,9 +80,18 @@
 				37F2A03C1E99EEA400630786 /* Assets.xcassets */,
 				37F2A03E1E99EEA400630786 /* LaunchScreen.storyboard */,
 				37F2A0411E99EEA400630786 /* Info.plist */,
+				37F2A0471E99EF6F00630786 /* GoogleService-Info.plist */,
 				37F2A0391E99EEA400630786 /* ManageMyWallet.xcdatamodeld */,
 			);
 			path = ManageMyWallet;
+			sourceTree = "<group>";
+		};
+		614417D3296360ABED148EF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8C1B9E4CCB88BB28587E185 /* Pods_ManageMyWallet.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37F2A0441E99EEA400630786 /* Build configuration list for PBXNativeTarget "ManageMyWallet" */;
 			buildPhases = (
+				1224D9462E9A4873D559C621 /* [CP] Check Pods Manifest.lock */,
 				37F2A02B1E99EEA400630786 /* Sources */,
 				37F2A02C1E99EEA400630786 /* Frameworks */,
 				37F2A02D1E99EEA400630786 /* Resources */,
+				D0F76AE065EF2ED7B72F6CDF /* [CP] Embed Pods Frameworks */,
+				F700C7C548262EBF47FCD7FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,12 +157,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				37F2A0401E99EEA400630786 /* LaunchScreen.storyboard in Resources */,
+				37F2A0481E99EF6F00630786 /* GoogleService-Info.plist in Resources */,
 				37F2A03D1E99EEA400630786 /* Assets.xcassets in Resources */,
 				37F2A0381E99EEA400630786 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1224D9462E9A4873D559C621 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D0F76AE065EF2ED7B72F6CDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ManageMyWallet/Pods-ManageMyWallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F700C7C548262EBF47FCD7FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ManageMyWallet/Pods-ManageMyWallet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		37F2A02B1E99EEA400630786 /* Sources */ = {
@@ -264,6 +343,7 @@
 		};
 		37F2A0451E99EEA400630786 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4D422437A339F59AB48E22D /* Pods-ManageMyWallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ManageMyWallet/Info.plist;
@@ -276,6 +356,7 @@
 		};
 		37F2A0461E99EEA400630786 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 686891E7E2E7F6B3CC32C273 /* Pods-ManageMyWallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ManageMyWallet/Info.plist;
